@@ -12673,7 +12673,7 @@ function ModernV2:CreateWindow(Config)
 	end;
 
 			UserSettings:AddLabel("Menu Scale"):AddDropdown({
-				Default = ModernV2.IsMobile and "Mobile" or "Large",
+				Default = ModernV2.IsMobile and "Mobile" or "Default",
 				Values = { "Default" },
 				Callback = function(value)
 					if ModernV2.Scales[value] then
