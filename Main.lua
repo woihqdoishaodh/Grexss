@@ -12674,7 +12674,7 @@ function ModernV2:CreateWindow(Config)
 
 			UserSettings:AddLabel("Menu Scale"):AddDropdown({
 				Default = ModernV2.IsMobile and "Mobile" or "Default",
-				Values = { "Default" },
+				Values = { "Default", "Large", "Mobile", "Small", "Compact" },
 				Callback = function(value)
 					if ModernV2.Scales[value] then
 						Window:SetSize(ModernV2.Scales[value]);
